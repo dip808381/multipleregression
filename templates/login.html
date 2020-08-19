@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Predict the value of Class that is, benign or malignant</h1>
+    
+         <!-- Main Input For Receiving Query to our ML -->
+        <form action="/" method="post">
+            <h4>Clump:</h4>
+            <input type="text" name="Clump" placeholder="Clump" required="required" />
+            <h4>UnifSize:</h4>
+            <input type="text" name="UnifSize" placeholder="UnifSize" required="required" />
+            <h4>UnifShape:</h4>
+            <input type="text" name="UnifShape" placeholder="UnifShape" required="required" />
+            <h4>MargAdh:</h4>
+            <input type="text" name="MargAdh" placeholder="MargAdh" required="required" />
+            <h4>SingEpiSize:</h4>
+            <input type="text" name="SingEpiSize" placeholder="SingEpiSize" required="required" />
+            <h4>BareNuc:</h4>
+            <input type="text" name="BareNuc" placeholder="BareNuc" required="required" />
+            <h4>BlandChrom:</h4>
+            <input type="text" name="BlandChrom" placeholder="BlandChrom" required="required" />
+            <h4>NormNucl:</h4>
+            <input type="text" name="NormNucl" placeholder="NormNucl " required="required" />
+            <h4>Mit:</h4>
+            <input type="text" name="Mit" placeholder="Mit" required="required" />
+             <h3>Enter Submit Button:</h3>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+    
+       <br>
+       <br>
+       <h1>{{ out }}</h1>
+    
+     </div>
+</body>
+</html>
